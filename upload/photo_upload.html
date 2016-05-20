@@ -1,0 +1,42 @@
+<?php
+
+ require('../dbconnect.php');
+ session_start();
+
+ var_dump($_SESSION['name']);
+
+ $sql = "SELECT * FROM categories";
+ $result = mysql_query($sql) or die(mysql_error());
+ $categories = array();
+
+ while($category = mysql_fetch_assoc($result)){
+   $categories[] = $category;
+ }
+
+?>
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+
+<body>
+  <form enctype="multipart/form-data" id="contribute" method="post" action="photo_upload_check.php">
+    <table class="table table-boarded table-hover">
+      <tr><th><h4>画像</h4></th>
+      <td><input type="file" name="upfile" />(GIF, JPEG, PNGのみ対応)</td>
+      <tr><th><h4>タグ</h4></th><td><input type="text" class="h4" id="tag" name="tag" size="20"></td></tr>
+    </table>
+
+　<div>
+  <?php foreach ($categories as $category): ?>
+  <input type="radio" name="cat_id" value="<?php echo $category['id']; ?>" />
+  <?php echo $category['category']; ?>
+  <?php endforeach; ?>
+  </div>
+
+
+  <div><input type="submit" value="保存する" /></div>
+  </form>
+</body>
+</html>

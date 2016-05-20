@@ -1,0 +1,53 @@
+.image-item {
+  display:inline-block;
+  margin: 10px auto;
+  vertical-align:middle;
+}
+
+.image-box{
+  display:inline-block;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+/*#image-box {
+  margin: 0;
+  /*text-align: center;*/
+  /*padding: 50px 0 50px 10px;
+}*/
+
+/*#image-box article,
+#image-box article .image-item,
+#image-box article .image-item img {
+  width: 150px;
+  height: 150px;
+}
+
+#image-box article .image-item img {
+  width: 150px;
+  height: 150px;
+}*/
+
+/*#image-box article{
+  margin: 4px;*/
+  /*display: inline;*/
+  /*display: -moz-inline-box;*/
+  /*display: inline-block;*/
+  /*border-style: solid;
+  border-width: 1px;
+  border-tag-item: #dddddd;*/
+}
+
+/*img {
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+}*/
+
+#odekake {
+  display: block;
+}
+
+#odekake p{
+  margin-bottom: 20px;
+}
