@@ -1,0 +1,367 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Yasashisa';
+  src: url('../../fonts/yasashisa-gothic.otf');
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('../../fonts/font_1_honokamarugo_1.1.ttf');
+}
+
+@font-face {
+  font-family: 'Ruriiro';
+  src: url('../../fonts/ruriiro.ttf');
+}
+
+body{
+  margin: 0;
+  height: 100%;
+  font-family:'Yasashisa';
+}
+
+a{
+  text-decoration: none;
+}
+
+#wrapper{
+    height: 100%;
+    width: 100%;
+    background-color: limegreen;
+    float: left;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34,49,52,0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+  float: left;
+}
+
+section{
+    height: 70%;
+    width: 100%;
+    background-color: deepskyblue;
+    float: left;
+}
+
+.container {
+  /*width: 1170px;*/
+  /*padding: 0 5px;*/
+  margin: 0 auto;
+}
+
+.header-left {
+  float: left;
+  padding: 20px 10px;
+  display: inline-block;
+}
+
+.header-left h2{
+  color: #fff;
+  /*width: 124px;*/
+  /*margin-top: 20px;*/
+}
+
+.header-right {
+  float: right;
+  background-color: rgba(255,255,255,0.3);
+  transition: all 0.5s;
+}
+
+.header-right:hover {
+  background-color: rgba(255,255,255,0.5);
+}
+
+.header-right .login {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  cursor: pointer;
+  display: block;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(http://lptp.net/wp-content/uploads/2015/06/cea22712fbd18b2578b9a23103a231dc_m.jpg);
+  background-size: cover;
+  background-color: #fff;
+  color: #fff;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.8;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+.top-wrapper p {
+  opacity: 0.8;
+  font-size: 15px;
+  margin-bottom: 35px;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.signup a{
+  color: #fff;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+/*モーダル*/
+.login-modal-wrapper, .signup-modal-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: -webkit-calc(50% - 210px);
+	left: calc(50% - 210px);
+  background-color: #e6ecf0;
+  padding: 20px 0 0;
+  border-radius: 10px;
+  width: 400px;
+  height: auto;
+  text-align: center;
+}
+
+.form-control {
+  display: inline-block;
+  font-family:FontAwesome, 'Yasashisa';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+#signup-form, #login-form {
+  width: 100%;
+}
+
+#signup-form h2, #login-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+#signup-form input, #login-form input {
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 14px 0;
+  background-color: #e6ecf0;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.button{
+  background-color: #239b76;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Yasashisa';
+}
+
+.lesson-wrapper {
+  height: 450px;
+  /*padding-left: 150px;*/
+  /*padding-bottom: 80px;*/
+  background-color: #f5f5f5;
+  /*background-color: #f4e9d6;*/
+  text-align: center;
+}
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+  width: 200px;
+  margin: 0 150px;
+}
+
+.lesson-icon p {
+  position: absolute;
+  /*margin: 0 150px;*/
+  top: 90px;
+  left: 200px;
+  width: 120px;
+  color: white;
+}
+
+.text-contents {
+  margin: 5% 120px;
+  width: 100%;
+  display: none;
+  font-size: 12px;
+  color: #b3aeb5;
+}
+
+.text-active {
+  display: block;
+}
+
+/*faq wrapper*/
+.faq-wrapper {
+  background-color: #e6ecf0;
+  text-align: center;
+  padding-bottom: 80px;
+  color: #5f5d60;
+}
+
+#faq-list {
+  width: 500px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+/*アコーディオン追加 */
+.faq-list-item {
+  margin:10px;
+  border-bottom:1px solid #ccc;
+  position:relative;
+  cursor:pointer;
+  text-align: left;
+}
+
+.faq-list-item h3 {
+  font-size: 14px;
+}
+
+.faq-list-item span {
+  position:absolute;
+  top:-3px;
+  right:5px;
+  color: #B3B3B3;
+  font-size:16px;
+}
+
+.answer {
+  font-size: 12px;
+  display: none;
+  padding: 5px 0px;
+  margin-bottom: 15px;
+}
+
+.message-wrapper {
+  /*border-bottom: 1px solid #eee;*/
+  padding-bottom: 80px;
+  text-align: center;
+  background-color: #e66b6b;
+}
+
+.message-wrapper h2{
+  color:#f4e9d6;
+}
+
+.message-wrapper .heading h3 {
+  font-weight: normal;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0px 7px #1a7940;
+  color:#fff;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+footer {
+  width: 100%;
+  padding-top: 30px;
+  background-color: #b3aeb5;
+  /*background-color: #e66b6b;*/
+  float: left;
+}
+
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+copyright {
+  margin: 0 auto;
+  /*padding-bottom: 50px;*/
+  color: rgba(34,49,52,0.9);
+}
